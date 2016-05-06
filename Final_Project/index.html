@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset=utf-8>
+		<script src="http://threejs.org/build/three.min.js"></script>
+		<script src="physijs/physi.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="init.js"></script>
+		<script src="ui.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="http://threejs.org/examples/js/renderers/Projector.js"></script>
+		<script src="http://threejs.org/examples/js/Detector.js"></script>
+		<script src="http://threejs.org/examples/js/shaders/FresnelShader.js"></script>
+		<script src="http://threejs.org/examples/js/controls/OrbitControls.js"></script>
+		<script src="http://threejs.org/examples/js/loaders/OBJLoader.js"></script>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		
+
+
+		<title>cecily and sam - final project yo</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+
+		</style>
+	</head>
+	<body>
+
+
+	<div id="instructions-box" onclick="handleInfoClick(event)">
+		<div class="center-box">
+			<h1>How to Play:</h1>
+			<p>Use the cursor to pop bubbles.</p>
+			<p>Scroll to zoom; click and drag to pan the camera</p>
+			<p>Have fun!!!!</p>
+			<p class="italicized">Created by Cecily Lo and Samantha Welch, May 2016</a></p>
+		</div>
+	</div>
+
+
+
+    <nav class='sidebar sidebar-menu-collapsed'> <a href='#' id='justify-icon'>
+        <span class='glyphicon glyphicon-align-justify'></span>
+      </a>
+
+        <ul class='level1'>
+            <li class='active'> <a class='expandable' href='#' title='Dashboard'>
+            <span class='glyphicon glyphicon-globe collapsed-element'></span>
+            <span class='expanded-element'>a whole new world:</span>
+          </a>
+
+                <ul class='level2'>
+                    <li> <a href='#' title='Beach' onclick='toggleBeach()'>boring beach</a>
+
+                    </li>
+                    <li> <a href='#' title='Jack' onclick='toggleJack()'>???</a>
+
+                    </li>
+                    <li> <a href='#' title='Room' onclick='toggleWater()'>h2o</a>
+
+                    </li>
+                    <li> <a href='#' title='Water' onclick='toggleRoom()'>boring room</a>
+
+                    </li>
+                    <li> <a href='#' title='Space' onclick='toggleSpace()'>oooo space</a>
+
+                    </li>
+                    <li> <a href='#' title='Kitti' onclick='toggleKitti()'>~pRiTTi KiTTi~</a>
+
+                    </li>
+
+
+
+                    <li> <a href='#' title='Remco' onclick='toggleRemco()'>OUR HERO!!!</a>
+
+                    </li>
+
+
+
+                    <li> <a href='#' title='Psychedelic 1' onclick='togglePsych1()'>RAINBOW ROOM</a>
+
+                    </li>
+                     <li> <a href='#' title='Psychedelic 2' onclick='togglePsych2()'>super cool vortex</a>
+
+                    </li>
+                    <li> <a href='#' title='Psychedelic 3' onclick='togglePsych3()'>wow fractal</a>
+
+                    </li>
+                </ul>
+            </li>
+            <li> <a onclick="handleInfoClick(event)" class='expandable' href='#' title='Instructions'>
+            <span class='glyphicon glyphicon-info-sign collapsed-element'></span>
+            <span class='expanded-element'>what do i do??</span>
+          </a>
+
+            </li>
+            </li>
+            <li> <a onclick="reset()" class='expandable' href='#' title='Reset'>
+            <span class='glyphicon glyphicon-refresh collapsed-element'></span>
+            <span class='expanded-element'>i want new bubbles!!!</span>
+          </a>
+
+            </li>
+        </ul> <a onclick="superCoolMode()" href='#' id='glasses-icon' title='Ooooo'>
+        <span class='glyphicon glyphicon-sunglasses'></span>
+      </a>
+
+    </nav>
+
+
+
+	</body>
+</html>
